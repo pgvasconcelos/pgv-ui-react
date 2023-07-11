@@ -33,7 +33,7 @@ function WorkList(){
         }
 
          getWorks(query);
-    }, [])
+    }, [searchParams])
 
     if(loading){
         return(

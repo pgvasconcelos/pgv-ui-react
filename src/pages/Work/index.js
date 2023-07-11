@@ -32,7 +32,7 @@ function WorkPage () {
         //  return() =>{
         //     console.log("desmontado")
         //  }
-    }, []) 
+    }, [id]) 
 
     if(loading){
         return(

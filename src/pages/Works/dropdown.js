@@ -26,7 +26,7 @@ function DropDown() {
           }
           GetURLParams()
        
-      }, [])
+      }, [searchParams])
   
 
     
