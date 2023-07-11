@@ -68,7 +68,7 @@ function WorkPage () {
             <p className="italic text-gray text-left">{work.attributes.description}</p>
             
 
-            <ReactMarkdown cçaslinkTarget="_blank" className="pt-8 text-left">{work.attributes.content}</ReactMarkdown>
+            <ReactMarkdown linkTarget="_blank" className="pt-8 text-left">{work.attributes.content}</ReactMarkdown>
         
             </article>
         </main>
