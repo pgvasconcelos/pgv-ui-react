@@ -3,7 +3,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 function Header(){
 return(
     <header>
-        <nav className='m-5' >
+        <nav className='mt-5' >
             <ul className='container mx-auto px-4 flex items-center justify-center w-screen text-dark-gray flex-wrap '>
                 <li 
                 className="px-4 hover:text-green italic">
