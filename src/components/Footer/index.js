@@ -2,20 +2,46 @@ import { Link } from "react-router-dom"
 
 function Footer(){
 return(
+<>
+    <div>
+     <Link to="https://wa.me//351926022045" className="fixed bottom-16 right-8 drop-shadow-lg
 
+">
+     <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="65"
+      height="56"
+      version="1.1"
+      viewBox="0 0 512 512"
+      xmlSpace="preserve"
+    >
+      <path
+        fill="#EDEDED"
+        d="M0 512l35.31-128C12.359 344.276 0 300.138 0 254.234 0 114.759 114.759 0 255.117 0S512 114.759 512 254.234 395.476 512 255.117 512c-44.138 0-86.51-14.124-124.469-35.31L0 512z"
+      ></path>
+      <path
+        fill="#55CD6C"
+        d="M137.71 430.786l7.945 4.414c32.662 20.303 70.621 32.662 110.345 32.662 115.641 0 211.862-96.221 211.862-213.628S371.641 44.138 255.117 44.138 44.138 137.71 44.138 254.234c0 40.607 11.476 80.331 32.662 113.876l5.297 7.945-20.303 74.152 75.916-19.421z"
+      ></path>
+      <path
+        fill="#FEFEFE"
+        d="M187.145 135.945l-16.772-.883c-5.297 0-10.593 1.766-14.124 5.297-7.945 7.062-21.186 20.303-24.717 37.959-6.179 26.483 3.531 58.262 26.483 90.041s67.09 82.979 144.772 105.048c24.717 7.062 44.138 2.648 60.028-7.062 12.359-7.945 20.303-20.303 22.952-33.545l2.648-12.359c.883-3.531-.883-7.945-4.414-9.71l-55.614-25.6c-3.531-1.766-7.945-.883-10.593 2.648l-22.069 28.248c-1.766 1.766-4.414 2.648-7.062 1.766-15.007-5.297-65.324-26.483-92.69-79.448-.883-2.648-.883-5.297.883-7.062l21.186-23.834c1.766-2.648 2.648-6.179 1.766-8.828l-25.6-57.379c-.884-2.649-3.532-5.297-7.063-5.297"
+      ></path>
+    </svg>
+   </Link>
+    </div>
     <footer className='bg-light-green h-fit text-darkgray w-full flex p-10 '>
 
         <div className='flex max-w-5xl justify-between  m-auto'>
 
         <span className='italic text-sm'> {new Date().getFullYear()} 
 
-        © All Rights Reserved-</span> 
+        © All Rights Reserved -</span> 
 
-        <Link className='ml-2 mr-2 font-semibold text-sm' href="mailto:hi@pgv.service">hi@pgv.service</Link>
+        {/* <Link className='ml-2 mr-2 font-semibold text-sm' to="https://wa.me//351926022045?text=Tenho%20interesse%20nos%20seus%20serviços">hi@pgv.service</Link> */}
 
-        -
-
-        <Link  href='https://www.linkedin.com/in/pedro-gouveia-4843a628/' target='_blank' rel='noreferrer' >
+       
+        <Link  href='https://www.linkedin.com/in/pedro-gouveia-4843a628/' target='_blank' rel='noreferrer' className="-ml-2" >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="64" height="22"><path d="M29.63.001H2.362C1.06.001 0 1.034 0 2.306V29.69C0 30.965 1.06 32 2.362 32h27.27C30.937 32 32 30.965 32 29.69V2.306C32 1.034 30.937.001 29.63.001z" fill="#0177b5"/><path d="M4.745 11.997H9.5v15.27H4.745zm2.374-7.6c1.517 0 2.75 1.233 2.75 2.75S8.636 9.9 7.12 9.9a2.76 2.76 0 0 1-2.754-2.753 2.75 2.75 0 0 1 2.753-2.75m5.35 7.6h4.552v2.087h.063c.634-1.2 2.182-2.466 4.5-2.466 4.806 0 5.693 3.163 5.693 7.274v8.376h-4.743V19.84c0-1.77-.032-4.05-2.466-4.05-2.47 0-2.85 1.93-2.85 3.92v7.554h-4.742v-15.27z" fill="#fff"/></svg>
         </Link>
 
@@ -24,7 +50,7 @@ return(
         </Link>
         </div>
     </footer> 
-
+    </>
 )
 
 }

@@ -28,12 +28,12 @@ return(
                 <li className="px-4">
                 <Link target='_blank' rel='noreferrer' to='https://www.linkedin.com/in/pedro-gouveia-4843a628/' >LinkedIn</Link>
                 </li>
-                <li 
+                {/* <li 
                 className="px-4 bg-gray border-r-2 border-none rounded hover:text-green hover:bg-trasparentgray hidden lg:block">
                 <Link to="mailto:hi@pgv.service">
                 hi@pgv.service
                 </Link>
-                </li>
+                </li> */}
             </ul>   
         </nav>
 
