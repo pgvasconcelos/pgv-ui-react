@@ -37,7 +37,7 @@ export default function Home() {
             </div>
         </div>
         <div className='flex flex-col max-w-5xl justify-between  m-auto'>
-            <div className='text-8xl font-serif -mb-10 -ml-20 text-left'>
+            <div className='text-8xl font-serif -mb-10 -ml-20 text-left hidden lg:block'>
               &quot;
             </div>
 
@@ -47,7 +47,7 @@ export default function Home() {
 
             While I may not be an expert in all these areas, my commitment lies in delivering quality work, where achieving results is always the primary objective of a project. I recognize my limitations, and my estimates are based on my ability to deliver within the given timeframe, taking into account the time required to learn things that I am not yet proficient in. Furthermore, I value the ability to contribute, co-create, and share tasks within a team.
             </p>
-            <div className='text-8xl items-end text-right font-serif -mr-20'>
+            <div className='text-8xl items-end text-right font-serif -mr-20 hidden lg:block'>
               &quot;
             </div>
         </div>
