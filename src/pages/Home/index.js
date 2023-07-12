@@ -84,7 +84,7 @@ export default function Home() {
                 <span className='pl-4'>Product and service design </span>
             </h2>
            <div className='flex flex-col md:flex-row max-w-5xl m-auto'> 
-                <div className='p-8 -mt-8'>
+                <div className=''>
                       <img className='mt-8 -mb-1 m-auto max-w-lg w-96 md:w-72 lg:w-fit'
                         src="https://res.cloudinary.com/dxbzhze4p/image/upload/v1688987610/dt_process_05b5256cc2.jpg"
                         width={400}
@@ -92,7 +92,7 @@ export default function Home() {
                         alt="Design thinking process"
                       /> 
                 </div>
-                <p className='text-left lg:pr-22 pr-8 pl-8 md:p-8 md:mt-2 text-sm lg:text-base'> 
+                <p className='text-left lg:pr-22 pr-8 pl-8 md:p-8 mt-2 text-sm lg:text-base'> 
               I can work throughout the user-centered design cycle to develop or improve products that are more engaging and solve real problems. I enjoy conducting research with clients to identify their real needs, <span className="font-bold">map their journeys</span>, and uncover valuable business opportunities. After we have made relevant discoveries, I can help<span className="font-bold"> prototype</span> our solution at a low cost, saving time and development resources. I can also organize and conduct <span className="font-bold">tests with real users</span> to <span className="font-bold">validate the hypotheses</span> and insights we discovered in the earlier research or solution phase.
               </p> 
           </div>
@@ -182,7 +182,7 @@ export default function Home() {
 
       {/* cta */}
     <section className='flex flex-col max-w-5xl justify-between  m-auto mb-16'>
-    <h1 className='lg:text-xl text-lg mb-8 text-center mt-24 p-4'>Would you like to see some projects that I have worked on?</h1>
+    <h1 className='lg:text-xl text-lg mb-8 text-center mt-24 pr-12 pl-12'>Would you like to see some projects that I have worked on?</h1>
     <a className='bg-black border-r-2 border-none rounded text-white hover:text-gray w-52 font-semibold m-auto p-4' href='/works'> See some of my works</a>
     </section>
     
