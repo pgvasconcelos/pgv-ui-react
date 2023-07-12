@@ -1,16 +1,17 @@
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      
-      <section className='flex  flex-col items-center justify-between'> 
+    <main className="min-h-screen w-screen">
+
+ {/* header   */}
+  <section className='flex  flex-col items-center justify-between'> 
 
       <div className='max-h-fit text-center max-w-lg  pt-24 '>
             <h1 className='text-7xl text-bold h-auto'>
               Let`s create products together?
               </h1>
           
-            <h4 className='text-lg mt-24 mb-24 font-semibold'>
+            <h4 className='text-lg mt-24 mb-24 font-semibold pr-8 pl-8'>
             I love creating products and businesses that solve real and valuable problems.
             </h4>   
           
@@ -21,8 +22,9 @@ export default function Home() {
             alt="Pedro Gouveia"
           />
       </div> 
-      </section>
+  </section>
    
+     {/* About me */}
       <section className='bg-light-green h-fit text-darkgray 	w-full'>
         
         <div className='flex w-full flex-col text-black  text-center'>
@@ -51,7 +53,7 @@ export default function Home() {
             </div>
         </div>
         <div className='flex flex-col max-w-5xl justify-between  m-auto'>
-            <div className='text-8xl font-serif -mb-10 -ml-20 text-left hidden xl:block'>
+            <div className='text-8xl font-serif -mb-10 xl:-ml-20 text-left hidden xl:block'>
               &quot;
             </div>
 
@@ -61,7 +63,7 @@ export default function Home() {
 
             While I may not be an expert in all these areas, my commitment lies in delivering quality work, where achieving results is always the primary objective of a project. I recognize my limitations, and my estimates are based on my ability to deliver within the given timeframe, taking into account the time required to learn things that I am not yet proficient in. Furthermore, I value the ability to contribute, co-create, and share tasks within a team.
             </p>
-            <div className='text-8xl items-end text-right font-serif -mr-20 hidden xl:block'>
+            <div className='text-8xl items-end text-right font-serif xl:-mr-20 hidden xl:block'>
               &quot;
             </div>
         </div>
@@ -81,12 +83,12 @@ export default function Home() {
                 </svg>
                 <span className='pl-4'>Product and service design </span>
             </h2>
-           <div className='flex flex-col md:flex-row	 max-w-5xl m-auto'> 
+           <div className='flex flex-col md:flex-row max-w-5xl m-auto'> 
                 <div className='p-8 -mt-8'>
                       <img className='mt-8 -mb-1 m-auto max-w-lg w-96 md:w-72 lg:w-fit'
                         src="https://res.cloudinary.com/dxbzhze4p/image/upload/v1688987610/dt_process_05b5256cc2.jpg"
-                        width={500}
-                        height={500}
+                        width={400}
+                        height={400}
                         alt="Design thinking process"
                       /> 
                 </div>
@@ -105,22 +107,22 @@ export default function Home() {
             <span className='pl-4'> Online business launch <span className="hidden md:inline-block ">- From zero to success</span></span>
         </h2>
         <div className='flex flex-col md:flex-row	 max-w-5xl m-auto	'> 
-            <div className='p-8 -m-8 md:ml-8  md:hidden  '>
-                    <img className='mt-8 -mb-1 m-auto max-w-lg w-96   '
+            <div className='md:hidden  '>
+                    <img className='mt-8 -mb-1 m-auto max-w-lg w-96 md:hidden  '
                       src="https://res.cloudinary.com/dxbzhze4p/image/upload/v1688987610/small_business_process_97b5352a39.jpg"
-                      width={500}
-                      height={500}
+                      width={400}
+                      height={400}
                       alt="Sales process"
                     />
             </div>
-            <p className='text-left pr-8 pt-4 pl-8 md:p-8 text-sm lg:text-base '> 
+            <p className='text-left pr-8 pt-4 pl-8 md:p-8 text-sm lg:text-base w-fit '> 
               I can help you <span className="font-bold"> structure an online business</span> from scratch, assist in<span className="font-bold"> defining the value of your product or service</span>, and guide you through the process of<span className="font-bold"> business validation</span>, help and teach you how to<span className="font-bold"> capture and convert leads</span> into customers in an organized and metric-driven way. Together, we can create or enhance your<span className="font-bold"> website and digital presence</span>, refine your sales pitch, and<span className="font-bold"> define strategies</span> to boost sales and learn together how we can improve the products with the client feedback. In more mature companies, I can also assist in implementing an agile workflow to increase team productivity.  
             </p>  
-            <div className='p-8 -m-8 lg:ml-8 hidden md:block  '>
-                <img className='mt-8 -mb-1 max-w-lg w-full md:w-80 lg:w-fit mr-8 '
+            <div className='hidden md:block  '>
+                <img className='mt-8 -mb-1 max-w-lg w-full md:w-80 lg:w-fit md:mr-8 '
                   src="https://res.cloudinary.com/dxbzhze4p/image/upload/v1688987610/small_business_process_97b5352a39.jpg"
-                  width={500}
-                  height={500}
+                  width={400}
+                  height={400}
                   alt="Sales process"
                 />
             </div>
@@ -139,8 +141,8 @@ export default function Home() {
                 <div className='pt-8 pb-4 md:p-8 -mt-8  '>
                         <img className='mt-8 -mb-1 m-auto max-w-lg w-96 md:w-72 lg:w-fit'
                             src="https://res.cloudinary.com/dxbzhze4p/image/upload/v1688987610/dev_tech_1598f5b655.jpg"
-                            width={500}
-                            height={500}
+                            width={400}
+                            height={400}
                             alt="Dev"
                           />
                 </div>
@@ -177,10 +179,13 @@ export default function Home() {
           </div> */}
 
       </section>
+
+      {/* cta */}
     <section className='flex flex-col max-w-5xl justify-between  m-auto mb-16'>
-    <h1 className='lg:text-xl text-lg mb-8 text-center mt-24'>Would you like to see some projects that I have worked on?</h1>
+    <h1 className='lg:text-xl text-lg mb-8 text-center mt-24 p-4'>Would you like to see some projects that I have worked on?</h1>
     <a className='bg-black border-r-2 border-none rounded text-white hover:text-gray w-52 font-semibold m-auto p-4' href='/works'> See some of my works</a>
     </section>
+    
     </main>
   )
 }
