@@ -55,7 +55,7 @@ export default function Home() {
               &quot;
             </div>
 
-            <p className='items-center text-center align-middle text-lg font-serif font-medium  leading-9		p-8'>
+            <p className='items-center text-center align-middle text-lg font-serif font-medium  leading-9		p-10'>
             My differential is my versatility. I have comprehensive experience in all stages of product development, from research to post-sales. I have held the position of CEO, approved projects for investment acquisition, led teams, created processes, designed websites and applications, conducted UX research, and developed interfaces. Additionally, I have conducted requirement assessments for compliance rules, independently developed an IoT product, and worked with games and gamification. I have also gained some experience in digital marketing, ranging from SEO to online sales ads.
            <br></br>           <br></br>
 
@@ -75,72 +75,87 @@ export default function Home() {
         
         
         <div className='flex text-left max-w-5xl m-auto flex-col'>
-          <h2 className='text-2xl font-semibold pl-8 mt-8 flex'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
-          </svg><span className='pl-4'>Product and service design </span>
-          </h2>
-           <div className='flex max-w-5xl m-auto'> 
-              <p className='text-left lg:pr-32 p-8 text-sm lg:text-base'> 
-              I can work throughout the user-centered design cycle to develop products that are more engaging and solve real problems. I enjoy conducting research with clients to identify their real needs, <span className="font-bold">map their journeys</span>, and uncover valuable business opportunities. After we have made relevant discoveries, I can help<span className="font-bold"> prototype</span> our solution at a low cost, saving time and development resources. I can also organize and conduct <span className="font-bold">tests with real users</span> to <span className="font-bold">validate the hypotheses</span> and insights we discovered in the earlier research or solution phase.
-              </p> 
-                <div className='p-8 -m-8 hidden lg:block'>
-                     <img className='mt-8 -mb-1 max-w-lg'
-                      src="https://res.cloudinary.com/dxbzhze4p/image/upload/v1688987610/dt_process_05b5256cc2.jpg"
-                      width={400}
-                      height={400}
-                      alt="Design thinking process"
-                    /> 
+            <h2 className='text-2xl font-semibold pl-8 mt-8 flex items-center '>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+                </svg>
+                <span className='pl-4'>Product and service design </span>
+            </h2>
+           <div className='flex flex-col md:flex-row	 max-w-5xl m-auto'> 
+                <div className='p-8 -mt-8'>
+                      <img className='mt-8 -mb-1 m-auto max-w-lg w-96 md:w-72 lg:w-fit'
+                        src="https://res.cloudinary.com/dxbzhze4p/image/upload/v1688987610/dt_process_05b5256cc2.jpg"
+                        width={500}
+                        height={500}
+                        alt="Design thinking process"
+                      /> 
                 </div>
-              </div>
-          </div>
-
-          <div className='flex max-w-5xl m-auto flex-col pt-20 '>
-          <h2 className='text-2xl font-semibold pl-8 text-left flex'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
-</svg> <span className='pl-4'>Online business consulting</span>
-</h2>
-          <div className='flex max-w-5xl m-auto '> 
-              <div className='p-8 -m-8 hidden lg:ml-8 lg:block'>
-                  <img className='mt-8 -mb-1 max-w-lg'
-                    src="https://res.cloudinary.com/dxbzhze4p/image/upload/v1688987610/small_business_process_97b5352a39.jpg"
-                    width={300}
-                    height={300}
-                    alt="Sales process"
-                  />
-              </div>
-            <p className='text-left lg:pl-52 p-8 text-sm lg:text-base '> 
-            I can help you <span className="font-bold"> structure an online business</span> from scratch, assist in<span className="font-bold"> defining the value of your product or service</span>, guide you through the process of<span className="font-bold"> business validation</span>, help and teach you how to<span className="font-bold"> capture and convert leads</span> into customers in an organized and metric-driven way. Together, we can create or enhance your<span className="font-bold"> website and digital presence</span>, refine your sales pitch, and<span className="font-bold"> define strategies</span> to boost sales. In more mature companies, I can also assist in implementing an agile workflow to increase team productivity.  
+                <p className='text-left lg:pr-22 pr-8 pl-8 md:p-8 md:mt-2 text-sm lg:text-base'> 
+              I can work throughout the user-centered design cycle to develop or improve products that are more engaging and solve real problems. I enjoy conducting research with clients to identify their real needs, <span className="font-bold">map their journeys</span>, and uncover valuable business opportunities. After we have made relevant discoveries, I can help<span className="font-bold"> prototype</span> our solution at a low cost, saving time and development resources. I can also organize and conduct <span className="font-bold">tests with real users</span> to <span className="font-bold">validate the hypotheses</span> and insights we discovered in the earlier research or solution phase.
               </p> 
-              </div>
-
           </div>
-      
-          <div className='flex max-w-5xl m-auto flex-col pt-20'>
-          <h2 className='text-2xl font-semibold flex pl-8 text-left'> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
-</svg> <span className='pl-4'>
- Software development</span></h2>
-          <div className='flex max-w-5xl m-auto'> 
+      </div>
 
-              <p className='text-left lg:pr-32 p-8 text-sm lg:text-base '> 
-            I can help you develop <span className="font-bold">landing pages</span>, <span className="font-bold">CMS websites</span>, build simple systems for <span className="font-bold">Minimum Viable Products (MVPs)</span> to validate business ideas, or even perform small <span className="font-bold">API integrations</span>. I&apos;m also capable of creating <span className="font-bold">API documentation</span>, understanding and testing all existing documentation. Additionally, I can conduct <span className="font-bold">compliance requirements</span> assessments on software to ensure that the system meets all standards and regulations. As a designer who understands code, and has worked on both back-end and front-end projects, I can think of solutions that are easy to implement and consider the impact on the development team. These skills help me communicate effectively with the team.
-                </p> 
-                <div className='p-8 -m-8 hidden lg:block'>
-                    <img className='mt-8 -mb-1 max-w-lg'
-                      src="https://res.cloudinary.com/dxbzhze4p/image/upload/v1688987610/dev_tech_1598f5b655.jpg"
-                      width={400}
-                      height={400}
-                      alt="Dev"
+        {/* ONLINE */}
+      <div className='flex max-w-5xl m-auto flex-col pt-20 '>
+          <h2 className='text-2xl font-semibold pl-8 text-left flex items-center'>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
+            </svg> 
+            <span className='pl-4'> Online business launch <span className="hidden md:inline-block ">- From zero to success</span></span>
+        </h2>
+        <div className='flex flex-col md:flex-row	 max-w-5xl m-auto	'> 
+            <div className='p-8 -m-8 md:ml-8  md:hidden  '>
+                    <img className='mt-8 -mb-1 m-auto max-w-lg w-96   '
+                      src="https://res.cloudinary.com/dxbzhze4p/image/upload/v1688987610/small_business_process_97b5352a39.jpg"
+                      width={500}
+                      height={500}
+                      alt="Sales process"
                     />
+            </div>
+            <p className='text-left pr-8 pt-4 pl-8 md:p-8 text-sm lg:text-base '> 
+              I can help you <span className="font-bold"> structure an online business</span> from scratch, assist in<span className="font-bold"> defining the value of your product or service</span>, and guide you through the process of<span className="font-bold"> business validation</span>, help and teach you how to<span className="font-bold"> capture and convert leads</span> into customers in an organized and metric-driven way. Together, we can create or enhance your<span className="font-bold"> website and digital presence</span>, refine your sales pitch, and<span className="font-bold"> define strategies</span> to boost sales and learn together how we can improve the products with the client feedback. In more mature companies, I can also assist in implementing an agile workflow to increase team productivity.  
+            </p>  
+            <div className='p-8 -m-8 lg:ml-8 hidden md:block  '>
+                <img className='mt-8 -mb-1 max-w-lg w-full md:w-80 lg:w-fit mr-8 '
+                  src="https://res.cloudinary.com/dxbzhze4p/image/upload/v1688987610/small_business_process_97b5352a39.jpg"
+                  width={500}
+                  height={500}
+                  alt="Sales process"
+                />
+            </div>
+        </div>
+      </div>
+      
+      {/* DEV */}
+    <div className='flex max-w-5xl m-auto flex-col pt-20'>
+        <h2 className='text-2xl font-semibold flex pl-8 text-left items-center'> 
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
+            </svg>
+            <span className='pl-4'>Small software development</span>
+        </h2>
+        <div className='flex flex-col md:flex-row	 max-w-5xl m-auto'> 
+                <div className='pt-8 pb-4 md:p-8 -mt-8  '>
+                        <img className='mt-8 -mb-1 m-auto max-w-lg w-96 md:w-72 lg:w-fit'
+                            src="https://res.cloudinary.com/dxbzhze4p/image/upload/v1688987610/dev_tech_1598f5b655.jpg"
+                            width={500}
+                            height={500}
+                            alt="Dev"
+                          />
                 </div>
-              </div>
-
-          </div>
-
+                <p className='text-left pr-8 pl-8 md:p-8 text-sm lg:text-base '> 
+                    I can help you develop <span className="font-bold">landing pages</span>, <span className="font-bold">CMS websites</span>, build simple systems for <span className="font-bold">Minimum Viable Products (MVPs)</span> to validate business ideas, or even perform small <span className="font-bold">API integrations</span>. I&apos;m also capable of creating <span className="font-bold">API documentation</span>, understanding and testing all existing documentation. Additionally, I can conduct <span className="font-bold">compliance requirements</span> assessments on software to ensure that the system meets all standards and regulations. As a designer who understands code, and has worked on both back-end and front-end projects, I can think of solutions that are easy to implement and consider the impact on the development team. These skills help me communicate effectively with the team.
+                </p> 
+        </div>
+    </div>
+    
+{/* 
           <div className='flex max-w-5xl m-auto flex-col pt-20 '>
           <h2 className='text-2xl font-semibold pl-8 text-left flex'> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
-</svg> <span className='pl-4'>
+</svg> 
+<span className='pl-4'>
  Workshops and training </span></h2>
           <div className='flex max-w-5xl m-auto'> 
           <div className='p-8 -m-8 lg:ml-8'>
@@ -159,7 +174,7 @@ export default function Home() {
                 </p> 
                
               </div>
-          </div>
+          </div> */}
 
       </section>
     <section className='flex flex-col max-w-5xl justify-between  m-auto mb-16'>

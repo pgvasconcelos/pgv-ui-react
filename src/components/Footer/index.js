@@ -4,7 +4,7 @@ function Footer(){
 return(
 <>
     <div>
-     <Link to="https://wa.me//351926022045" className="fixed bottom-16 right-8 drop-shadow-lg lg:bottom-16 right-8">
+     <Link to="https://wa.me//351926022045" className="fixed bottom-16 right-8 drop-shadow-lg lg:bottom-16">
      <svg
       xmlns="http://www.w3.org/2000/svg"
       width="65"
@@ -28,18 +28,18 @@ return(
     </svg>
    </Link>
     </div>
-    <footer className='bg-light-green h-fit text-darkgray w-full flex p-10 '>
+    <footer className='bg-black h-fit text-darkgray w-full flex p-10 '>
 
         <div className='flex max-w-5xl justify-between  m-auto'>
 
-        <span className='italic text-sm'> {new Date().getFullYear()} 
+        <span className='italic text-sm text-lightgray'> {new Date().getFullYear()} 
 
         © All Rights Reserved -</span> 
 
         {/* <Link className='ml-2 mr-2 font-semibold text-sm' to="https://wa.me//351926022045?text=Tenho%20interesse%20nos%20seus%20serviços">hi@pgv.service</Link> */}
 
        
-        <Link  href='https://www.linkedin.com/in/pedro-gouveia-4843a628/' target='_blank' rel='noreferrer' className="-ml-2" >
+        <Link  to='https://www.linkedin.com/in/pedro-gouveia-4843a628/' target='_blank' rel='noreferrer' className="-ml-2 " >
         <svg
       xmlns="http://www.w3.org/2000/svg"
       width="64"
@@ -57,7 +57,7 @@ return(
     </svg>
         </Link>
 
-        <Link href='https://github.com/pgvasconcelos' target='_blank' rel='noreferrer'>
+        <Link to='https://github.com/pgvasconcelos' target='_blank' rel='noreferrer' className="rounded bg-white " >
        <svg
       xmlns="http://www.w3.org/2000/svg"
       width="22"
