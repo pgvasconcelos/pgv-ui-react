@@ -59,8 +59,8 @@ function WorkPage () {
                   
                <img className='p-2'
                         src={work.attributes.image.data.attributes.url}
-                        width={500}
-                        height={500}
+                        width={780}
+                        height={780}
                         alt=""
                     /> 
                     </div>
