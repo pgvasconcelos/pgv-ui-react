@@ -7,7 +7,7 @@ export default function Home() {
   <section className='flex  flex-col items-center justify-between'> 
 
       <div className='max-h-fit text-center max-w-lg  pt-24 '>
-            <h1 className='text-7xl text-bold h-auto'>
+            <h1 className='text-6xl p-4 lg:p-0 lg:text-7xl text-bold h-auto'>
               Let`s create products together?
               </h1>
           
