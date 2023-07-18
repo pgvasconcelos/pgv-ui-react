@@ -1,0 +1,27 @@
+{
+    "translation" : {
+        "MenuServices": "Serviços",
+        "MenuWorks": "Trabalhos",
+        "HomeH1": "Vamos criar novos produtos juntos?",
+        "HomeSubtitle" : "Meu trabalho é criar produtos e negócios que resolvem problemas reais e valiosos",
+        "HomePedroName": "Pedro Gouveia | 36 anos",
+        "HomePedroDescription": "16 anos com designer | Reside em Portugal",
+        "HomeAboutMe": "Meu diferencial é a minha versatilidade. Tenho ampla experiência em todas as etapas do desenvolvimento de produtos, desde pesquisa até pós-vendas. Já ocupei o cargo de CEO, aprovo projetos para aquisição de investimentos, lidero equipes, crio processos, projeto websites e aplicativos, conduzo pesquisas de experiência do usuário (UX) e desenvolvo interfaces. Além disso, realizei avaliações de requisitos para normas de conformidade, desenvolvi independentemente um produto de IoT e trabalhei com jogos e gamificação. Também adquiri alguma experiência em marketing digital, abrangendo desde SEO até anúncios de vendas online.",
+        "HomeAboutMeSecondParagraph": "Embora eu possa não ser um especialista em todas essas áreas, meu compromisso está em entregar um trabalho de qualidade, onde alcançar resultados seja sempre o objetivo principal de um projeto. Reconheço minhas limitações e minhas estimativas são baseadas na minha capacidade de entregar dentro do prazo estabelecido, levando em consideração o tempo necessário para aprender coisas nas quais ainda não sou proficiente. Além disso, valorizo a habilidade de contribuir, co-criar e compartilhar tarefas dentro de uma equipe.",
+        "HomeTitleServices": "Serviços",
+        "HomeSubtitleTitleServices": "Como eu posso ajudar o seu negócio?",
+        "HomeServiceOneDesign": "Product and service design",
+        "HomeServiceOneDesignDescription": "Eu posso trabalhar em todo o ciclo de design centrado no usuário para **desenvolver ou aprimorar produtos** que sejam mais envolventes e solucionem problemas reais. Gosto de **conduzir pesquisas com clientes** para identificar suas necessidades reais, **mapear suas jornadas** e **descobrir oportunidades de negócios valiosas**. Após fazermos descobertas relevantes, posso ajudar a **prototipar** nossa solução com baixo custo, economizando tempo e recursos de desenvolvimento. Também posso organizar e conduzir **testes com usuários** reais para **validar as hipóteses e insights** descobertos na fase anterior de pesquisa ou solução.",
+        "HomeServiceOneBusiness": "Lançamento de negócios online",
+        "HomeServiceBusinessZeroToSucess": "Do zero ao sucesso",
+        "HomeServiceOneBusinessDescription": "Posso ajudá-lo(a) a estruturar um negócio online desde o início, auxiliar na **definição do valor do seu produto ou serviço** e orientá-lo(a) no processo de **validação do negócio**. Posso ajudar e **ensinar a capturar e converter leads em clientes** de forma organizada e baseada em métricas. Juntos, podemos criar ou aprimorar seu **site e presença digital**, refinar sua abordagem de **vendas** e definir **estratégias para impulsionar as vendas**. Além disso, podemos aprender juntos como **melhorar os produtos** com o feedback dos clientes. Em empresas mais maduras, posso ajudar na implementação de um fluxo de **trabalho ágil** para *+aumentar a produtividade da equipe**.",
+         "HomeServiceDevelopment": "Pequenos desenvolvimentos de software",
+        "HomeServiceDevelopmentDescription": "Posso ajudar no desenvolvimento de **landing pages**, **sites com CMS**, criar sistemas simples para **Produtos Mínimos Viáveis (MVPs)** para validar ideias de negócio, ou até mesmo realizar **integrações de APIs**. Também sou capaz de criar **documentação de API**, entender e testar toda a documentação existente. Além disso, posso realizar **avaliações de requisitos de conformidade em software** para garantir que o sistema atenda a todas as normas e regulamentos. Como um designer que entende de programação e já trabalhou em projetos tanto no back-end quanto no front-end, consigo pensar em soluções fáceis de implementar e considerar o impacto na equipe de desenvolvimento. Essas habilidades me ajudam a me comunicar efetivamente com a equipe.",
+        "CtaWorksTitle": "Gostaria de ver alguns dos trabalhos que eu trabalhei?",
+        "CtaWorksTitleButton": "Conheça alguns trabalhos",
+        "WorksPageTitle": " Trabalhos",
+        "WorksTitle": " Gostaria de saber mais sobre alguns dos meus trabalhos?",
+        "WorksFilterBy": "Filtrar por:"     
+        
+    }
+}

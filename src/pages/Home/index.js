@@ -1,18 +1,34 @@
+import { useTranslation } from 'react-i18next';
+import { useEffect } from 'react';
+import ReactMarkdown from "react-markdown";
+
 
 export default function Home() {
+  
+  const {t, i18n } = useTranslation() 
+  
+  
+  useEffect(() =>{
+    let lng = navigator.language;
+    i18n.changeLanguage(lng);
+  }, [i18n])
+
+  let lng = navigator.language;
+        
   return (
+
     <main className="min-h-screen w-screen">
 
  {/* header   */}
-  <section className='flex  flex-col items-center justify-between'> 
+  <section className=' flex  flex-col items-center justify-between'> 
 
       <div className='max-h-fit text-center max-w-lg  pt-24 '>
-            <h1 className='text-6xl p-4 lg:p-0 lg:text-7xl text-bold h-auto'>
-              Let`s create products together?
-              </h1>
+ 
+        
+            <h1 className='text-6xl p-4 lg:p-0 lg:text-7xl text-bold h-auto'>{t('HomeH1')}</h1>
           
             <h4 className='text-lg mt-24 mb-24 font-semibold pr-8 pl-8'>
-            I love creating products and businesses that solve real and valuable problems.
+              {t('HomeSubtitle')}
             </h4>   
           
               <img className='m:auto mt-24 -mb-1'
@@ -29,7 +45,7 @@ export default function Home() {
         
         <div className='flex w-full flex-col text-black  text-center'>
             <div className='font-bold flex m-auto mt-14'>
-              Pedro Gouveia | 36 years<a target='_blank' href='https://www.linkedin.com/in/pedro-gouveia-4843a628/' rel="noreferrer">
+            {t('HomePedroName')}<a target='_blank' href='https://www.linkedin.com/in/pedro-gouveia-4843a628/' rel="noreferrer">
               <svg
       xmlns="http://www.w3.org/2000/svg"
       width="64"
@@ -49,7 +65,7 @@ export default function Home() {
             </div>
           
             <div className='text-sm '>
-              16 years as a designer | Portugal Based  
+            {t('HomePedroDescription')} 
             </div>
         </div>
         <div className='flex flex-col max-w-5xl justify-between  m-auto'>
@@ -58,10 +74,11 @@ export default function Home() {
             </div>
 
             <p className='items-center text-center align-middle text-lg font-serif font-medium  leading-9		p-10'>
-            My differential is my versatility. I have comprehensive experience in all stages of product development, from research to post-sales. I have held the position of CEO, approved projects for investment acquisition, led teams, created processes, designed websites and applications, conducted UX research, and developed interfaces. Additionally, I have conducted requirement assessments for compliance rules, independently developed an IoT product, and worked with games and gamification. I have also gained some experience in digital marketing, ranging from SEO to online sales ads.
+            {t('HomeAboutMe')} 
+
            <br></br>           <br></br>
 
-            While I may not be an expert in all these areas, my commitment lies in delivering quality work, where achieving results is always the primary objective of a project. I recognize my limitations, and my estimates are based on my ability to deliver within the given timeframe, taking into account the time required to learn things that I am not yet proficient in. Furthermore, I value the ability to contribute, co-create, and share tasks within a team.
+           {t('HomeAboutMeSecondParagraph')} 
             </p>
             <div className='text-8xl items-end text-right font-serif xl:-mr-20 hidden xl:block'>
               &quot;
@@ -71,9 +88,13 @@ export default function Home() {
       </section>
       
       {/* services section  */}
-      <section id='services' className='flex w-full flex-col text-center'>
-        <h1 className='text-5xl mt-16 mb-4 text-semibold'>Services</h1>
-          <h2 className='text-lg mb-8  '> How can I help your business?</h2>
+      <section id='services' className=' flex w-full flex-col text-center'>
+        <h1 className='text-5xl mt-16 mb-4 text-semibold'>
+             {t('HomeTitleServices')} 
+        </h1>
+          <h2 className='text-lg mb-8  '> 
+            {t('HomeSubtitleTitleServices')} 
+          </h2>
         
         
         <div className='flex text-left max-w-5xl m-auto flex-col'>
@@ -81,7 +102,9 @@ export default function Home() {
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
                 </svg>
-                <span className='pl-4'>Product and service design </span>
+                <span className='pl-4'>
+                      {t('HomeServiceOneDesign')} 
+                </span>
             </h2>
            <div className='flex flex-col md:flex-row max-w-5xl m-auto'> 
                 <div className=''>
@@ -92,9 +115,9 @@ export default function Home() {
                         alt="Design thinking process"
                       /> 
                 </div>
-                <p className='text-left lg:pr-22 pr-8 pl-8 md:p-8 mt-2 text-sm lg:text-base'> 
-              I can work throughout the user-centered design cycle to develop or improve products that are more engaging and solve real problems. I enjoy conducting research with clients to identify their real needs, <span className="font-bold">map their journeys</span>, and uncover valuable business opportunities. After we have made relevant discoveries, I can help<span className="font-bold"> prototype</span> our solution at a low cost, saving time and development resources. I can also organize and conduct <span className="font-bold">tests with real users</span> to <span className="font-bold">validate the hypotheses</span> and insights we discovered in the earlier research or solution phase.
-              </p> 
+                <ReactMarkdown className='text-left lg:pr-22 pr-8 pl-8 md:p-8 mt-2 text-sm lg:text-base '> 
+                     {t('HomeServiceOneDesignDescription')} 
+              </ReactMarkdown> 
           </div>
       </div>
 
@@ -104,7 +127,9 @@ export default function Home() {
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
             </svg> 
-            <span className='pl-4'> Online business launch <span className="hidden md:inline-block ">- From zero to success</span></span>
+            <span className='pl-4'> 
+            {t('HomeServiceOneBusiness')} 
+             <span className="hidden md:inline-block "> - {t('HomeServiceBusinessZeroToSucess')} </span></span>
         </h2>
         <div className='flex flex-col md:flex-row	 max-w-5xl m-auto	'> 
             <div className='md:hidden  '>
@@ -115,9 +140,9 @@ export default function Home() {
                       alt="Sales process"
                     />
             </div>
-            <p className='text-left pr-8 pt-4 pl-8 md:p-8 text-sm lg:text-base w-fit '> 
-              I can help you <span className="font-bold"> structure an online business</span> from scratch, assist in<span className="font-bold"> defining the value of your product or service</span>, and guide you through the process of<span className="font-bold"> business validation</span>, help and teach you how to<span className="font-bold"> capture and convert leads</span> into customers in an organized and metric-driven way. Together, we can create or enhance your<span className="font-bold"> website and digital presence</span>, refine your sales pitch, and<span className="font-bold"> define strategies</span> to boost sales and learn together how we can improve the products with the client feedback. In more mature companies, I can also assist in implementing an agile workflow to increase team productivity.  
-            </p>  
+            <ReactMarkdown className='text-left pr-8 pt-4 pl-8 md:p-8 text-sm lg:text-base w-fit '> 
+                   {t('HomeServiceOneBusinessDescription')} 
+            </ReactMarkdown>  
             <div className='hidden md:block  '>
                 <img className='mt-8 -mb-1 max-w-lg w-full md:w-80 lg:w-fit md:mr-8 '
                   src="https://res.cloudinary.com/dxbzhze4p/image/upload/v1688987610/small_business_process_97b5352a39.jpg"
@@ -135,7 +160,9 @@ export default function Home() {
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
             <path strokeLinecap="round" strokeLinejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
             </svg>
-            <span className='pl-4'>Small software development</span>
+            <span className='pl-4'>
+               {t('HomeServiceDevelopment')} 
+            </span>
         </h2>
         <div className='flex flex-col md:flex-row	 max-w-5xl m-auto'> 
                 <div className='pt-8 pb-4 md:p-8 -mt-8  '>
@@ -146,9 +173,9 @@ export default function Home() {
                             alt="Dev"
                           />
                 </div>
-                <p className='text-left pr-8 pl-8 md:p-8 text-sm lg:text-base '> 
-                    I can help you develop <span className="font-bold">landing pages</span>, <span className="font-bold">CMS websites</span>, build simple systems for <span className="font-bold">Minimum Viable Products (MVPs)</span> to validate business ideas, or even perform small <span className="font-bold">API integrations</span>. I&apos;m also capable of creating <span className="font-bold">API documentation</span>, understanding and testing all existing documentation. Additionally, I can conduct <span className="font-bold">compliance requirements</span> assessments on software to ensure that the system meets all standards and regulations. As a designer who understands code, and has worked on both back-end and front-end projects, I can think of solutions that are easy to implement and consider the impact on the development team. These skills help me communicate effectively with the team.
-                </p> 
+                <ReactMarkdown className='text-left pr-8 pl-8 md:p-8 text-sm lg:text-base '> 
+                     {t('HomeServiceDevelopmentDescription')} 
+                </ReactMarkdown> 
         </div>
     </div>
     
@@ -182,8 +209,12 @@ export default function Home() {
 
       {/* cta */}
     <section className='flex flex-col max-w-5xl justify-between  m-auto mb-16'>
-    <h1 className='lg:text-xl text-lg mb-8 text-center mt-24 pr-12 pl-12'>Would you like to see some projects that I have worked on?</h1>
-    <a className='bg-black border-r-2 border-none rounded text-white hover:text-gray w-52 font-semibold m-auto p-4' href='/works'> See some of my works</a>
+    <h1 className='lg:text-xl text-lg mb-8 text-center mt-24 pr-12 pl-12'>
+      {t('CtaWorksTitle')}
+    </h1>
+    <a className='bg-black border-r-2 border-none rounded text-white hover:text-gray w-62 font-semibold m-auto p-4' href='/works'> 
+        {t('CtaWorksTitleButton')}
+    </a>
     </section>
     
     </main>

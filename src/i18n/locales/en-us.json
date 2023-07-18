@@ -1,0 +1,29 @@
+{
+    "translation" : {
+        "MenuServices": "Services",
+        "MenuWorks": "Works",
+        "HomeH1": "Let`s create products together?",
+        "HomeSubtitle" : "I love creating products and businesses that solve real and valuable problems.",
+        "HomePedroName": "Pedro Gouveia | 36 years",
+        "HomePedroDescription": "16 years as a designer | Portugal Based",
+        "HomeAboutMe": "My differential is my versatility. I have comprehensive experience in all stages of product development, from research to post-sales. I have held the position of CEO, approved projects for investment acquisition, led teams, created processes, designed websites and applications, conducted UX research, and developed interfaces. Additionally, I have conducted requirement assessments for compliance rules, independently developed an IoT product, and worked with games and gamification. I have also gained some experience in digital marketing, ranging from SEO to online sales ads.",
+        "HomeAboutMeSecondParagraph": "While I may not be an expert in all these areas, my commitment lies in delivering quality work, where achieving results is always the primary objective of a project. I recognize my limitations, and my estimates are based on my ability to deliver within the given timeframe, taking into account the time required to learn things that I am not yet proficient in. Furthermore, I value the ability to contribute, co-create, and share tasks within a team.",
+        "HomeTitleServices": "Services",
+        "HomeSubtitleTitleServices": "How can I help your business?",
+        "HomeServiceOneDesign": "Product and service design",
+        "HomeServiceOneDesignDescription": "I can work throughout the user-centered design cycle to develop or improve products that are more engaging and solve real problems. I enjoy conducting research with clients to identify their real needs, **map their journeys**, and uncover valuable business opportunities. After we have made relevant discoveries, I can help **prototype** our solution at a low cost, saving time and development resources. I can also organize and conduct **tests with real users to validate the hypotheses** and insights we discovered in the earlier research or solution phase.",
+        "HomeServiceOneBusiness": "Online business launch",
+        "HomeServiceBusinessZeroToSucess": "From zero to success",
+        "HomeServiceOneBusinessDescription": "I can help you **structure an online business** from scratch, assist in **defining the value of your product or service**, and guide you through the process of **business validation**, help and teach you how to **capture and convert leads** into customers in an organized and metric-driven way. Together, we can create or enhance your **website and digital presence**, refine your sales pitch, and **define strategies** to boost sales and learn together how we can improve the products with the client feedback. In more mature companies, I can also assist in implementing an agile workflow to increase team productivity",
+         "HomeServiceDevelopment": "Small software development",
+        "HomeServiceDevelopmentDescription": "I can help you develop **landing pages, CMS websites**, build simple systems for **Minimum Viable Products (MVPs)** to validate business ideas, or even perform small **API integrations**. I'm also capable of creating **API documentation**, understanding and testing all existing documentation. Additionally, I can conduct **compliance requirements** assessments on software to ensure that the system meets all standards and regulations. As a designer who understands code, and has worked on both back-end and front-end projects, I can think of solutions that are easy to implement and consider the impact on the development team. These skills help me communicate effectively with the team.",
+        "CtaWorksTitle": "Would you like to see some projects that I have worked on?",
+        "CtaWorksTitleButton": "See some of my works",
+        "WorksPageTitle": " Works",
+        "WorksTitle": " Would you like to know more about somes works that I have done?",
+        "WorksFilterBy": "Filter by type:"
+
+       
+       
+    }
+}

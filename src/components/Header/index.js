@@ -1,6 +1,19 @@
 import { HashLink as Link } from 'react-router-hash-link';
+import { useTranslation } from 'react-i18next';
+import { useEffect } from 'react';
+
 
 function Header(){
+
+    const {t, i18n } = useTranslation() 
+  
+  
+    useEffect(() =>{
+      let lng = navigator.language;
+      i18n.changeLanguage(lng);
+    }, [i18n])
+  
+    let lng = navigator.language;
 return(
     <header>
         <nav className='mt-5' >
@@ -16,13 +29,13 @@ return(
                 <li 
                 className="px-4 hover:text-green">
                     <Link to='/#services' >
-                    Services
+                    {t('MenuServices')}
                     </Link>
                 </li>
                 <li 
                 className="px-4 hover:text-green">
                     <Link to='/works?selected=all' >
-                    Works
+                      {t('MenuWorks')}
                     </Link>
                 </li>
                 <li className="px-4">

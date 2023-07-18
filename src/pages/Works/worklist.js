@@ -44,7 +44,10 @@ function WorkList(){
         
     }
     return(       
-   <div className='grid lg:grid-cols-2 mt-10 gap-4'>              {
+   <div className='grid lg:grid-cols-2 mt-10 gap-4'>              
+   {console.log(works)}
+   {
+
                 works.map((work) => { 
                 return(
                     <a className=" p-6 border-spacing-3 border border-light-gray rounded-lg block max-w-lg   " href={`works/${work.id}`} id={work.id} key={work.id}>
