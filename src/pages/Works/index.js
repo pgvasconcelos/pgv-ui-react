@@ -15,6 +15,7 @@ function Works(){
   
     let lng = navigator.language;
 
+
 return(
     <main className="flex container items-center flex-col m-auto min-h-screen">
         <h1 className='text-4xl text-center pb-4 pt-12 font-light'>
@@ -32,7 +33,7 @@ return(
                 <DropDown></DropDown>
             </div> 
          
-            <WorkList></WorkList>
+            <WorkList lng={lng}></WorkList>
          
         </section>
     </main>

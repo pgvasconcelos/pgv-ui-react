@@ -2,7 +2,7 @@
  import api from '../../services/api'
  import { useSearchParams } from "react-router-dom";
 
-function WorkList(){
+function WorkList(props){
     
     //get the query from url
     let [searchParams] = useSearchParams();
@@ -11,17 +11,24 @@ function WorkList(){
     const [works, setWorks] = useState([ ])
     const [loading, setLoading] = useState(true)
 
-
     useEffect(()=> {
         const query = searchParams.get('selected')
-
+        let lang = props.lng
+        if(props.lng === "pt-BR" || props.lng === "pt" || props.lng === "pt-pt" ){
+            lang = "pt"
+        }
+        else{
+            lang = "en"
+        }
+       
+      
         async function getWorks(type){
             if( type == null || type === "all" ){
-                const res = await api.get(`/works?populate=*`) 
+                const res = await api.get(`/works?populate=*&locale=${lang}`) 
     
                 setWorks(res.data.data)
             } else{            
-            const res = await api.get(`/works?filters[type][$eq]=${type}&populate=*`) 
+            const res = await api.get(`/works?filters[type][$eq]=${type}&populate=*&locale=${lang}`) 
     
             setWorks(res.data.data)
 
@@ -33,7 +40,7 @@ function WorkList(){
         }
 
          getWorks(query);
-    }, [searchParams])
+    }, [searchParams, props.lng])
 
     if(loading){
         return(
@@ -44,12 +51,13 @@ function WorkList(){
         
     }
     return(       
-   <div className='grid lg:grid-cols-2 mt-10 gap-4'>              
-   {console.log(works)}
+   <div className='grid lg:grid-cols-2 mt-10 gap-4'>    
+   {/* {props.lng}*/}
    {
 
                 works.map((work) => { 
                 return(
+                    
                     <a className=" p-6 border-spacing-3 border border-light-gray rounded-lg block max-w-lg   " href={`works/${work.id}`} id={work.id} key={work.id}>
 
                     { work.attributes.password_requeried ?  
