@@ -25,7 +25,7 @@ export default function Home() {
       <div className='max-h-fit text-center max-w-lg  pt-24 '>
  
         
-            <h1 className='text-6xl p-4 lg:p-0 lg:text-7xl text-bold h-auto'>{t('HomeH1')}</h1>
+            <h1 className='text-6xl p-4 lg:p-0 lg:text-6xl text-bold h-auto'>{t('HomeH1')}</h1>
           
             <h4 className='text-lg mt-24 mb-24 font-semibold pr-8 pl-8'>
               {t('HomeSubtitle')}
