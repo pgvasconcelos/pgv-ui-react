@@ -14,7 +14,17 @@ export default function Home() {
   }, [i18n])
 
   let lng = navigator.language;
-        
+   
+  
+  let Linkedinlang = lng
+
+  if(Linkedinlang === "pt-BR" || Linkedinlang === "pt" || Linkedinlang === "pt-pt" ){
+    Linkedinlang = "pt"
+    }
+    else{
+      Linkedinlang = "en_US"
+    }
+  const linkedinUrl = `https://www.linkedin.com/in/pedro-gouveia-4843a628/?locale=${Linkedinlang}`
   return (
 
     <main className="min-h-screen w-screen">
@@ -45,7 +55,7 @@ export default function Home() {
         
         <div className='flex w-full flex-col text-black  text-center'>
             <div className='font-bold flex m-auto mt-14'>
-            {t('HomePedroName')}<a target='_blank' href='https://www.linkedin.com/in/pedro-gouveia-4843a628/' rel="noreferrer">
+            {t('HomePedroName')}<a target='_blank' href={linkedinUrl} rel="noreferrer">
               <svg
       xmlns="http://www.w3.org/2000/svg"
       width="64"

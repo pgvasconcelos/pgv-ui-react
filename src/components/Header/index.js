@@ -14,6 +14,15 @@ function Header(){
     }, [i18n])
   
     let lng = navigator.language;
+    let lang = lng
+    if(lang === "pt-BR" || lang === "pt" || lang === "pt-pt" ){
+        lang = "pt"
+    }
+    else{
+        lang = "en_US"
+    }
+
+    const linkedinUrl = `https://www.linkedin.com/in/pedro-gouveia-4843a628/?locale=${lang}`
 return(
     <header>
         <nav className='mt-5' >
@@ -39,7 +48,7 @@ return(
                     </Link>
                 </li>
                 <li className="px-4">
-                <Link target='_blank' rel='noreferrer' to='https://www.linkedin.com/in/pedro-gouveia-4843a628/' >LinkedIn</Link>
+                <Link target='_blank' rel='noreferrer' to={linkedinUrl} >LinkedIn</Link>
                 </li>
                 {/* <li 
                 className="px-4 bg-gray border-r-2 border-none rounded hover:text-green hover:bg-trasparentgray hidden lg:block">
