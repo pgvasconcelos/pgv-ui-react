@@ -1,6 +1,7 @@
  import { useState, useEffect } from 'react'
  import api from '../../services/api'
  import { useSearchParams } from "react-router-dom";
+ import Reveal  from "../Home/reveal"
 
 function WorkList(props){
     
@@ -57,7 +58,7 @@ function WorkList(props){
 
                 works.map((work) => { 
                 return(
-                    
+                    <Reveal>
                     <a className=" p-6 border-spacing-3 border border-light-gray rounded-lg block max-w-lg   " href={`works/${work.id}`} id={work.id} key={work.id}>
 
                     { work.attributes.password_requeried ?  
@@ -90,7 +91,7 @@ function WorkList(props){
                         
 
                     </a>
-                
+                    </Reveal>
                 )})
             } 
          </div>

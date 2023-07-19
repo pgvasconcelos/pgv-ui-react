@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import api from './../../services/api'
 import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
+import Reveal  from "../Home/reveal"
 
 function WorkPage () {
     const [work, setWork] = useState([])
@@ -43,7 +44,7 @@ function WorkPage () {
         
     }
     return(
-       
+       <Reveal>
         <main className="flex  flex-col items-center justify-between ">
 
             <article className="prose lg lg:prose-xl p-4 pt-12">
@@ -72,6 +73,7 @@ function WorkPage () {
         
             </article>
         </main>
+        </Reveal>
     )
 }
 export default WorkPage;
