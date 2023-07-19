@@ -23,12 +23,12 @@ useEffect(() =>{
     }, [isInView, mainControls])
 
 return(
-    <div ref={ref} style={{position: "relative, over", overflow: "hidden"}}>
+    <div ref={ref} style={{position: "relative, over"}}>
         <motion.div
             variants={variants}
             initial="hidden"
             animate={mainControls}
-            transition = {{duration:0.5, type: "spring", damping: 25, stiffness: 500}}  
+            transition = {{duration:1, type: "spring", damping: 30, stiffness: 200}}  
         >
                {props.children}
                 {/* <motion.div

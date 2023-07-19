@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { useEffect , useState} from 'react';
+import { useEffect} from 'react';
 import ReactMarkdown from "react-markdown";
 
 import { motion } from "framer-motion"
