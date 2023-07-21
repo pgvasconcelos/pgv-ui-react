@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown";
 
 import { motion } from "framer-motion"
 import Reveal  from "./reveal"
+import { Link } from 'react-router-dom';
 
 
 
@@ -250,12 +251,18 @@ export default function Home() {
           <h1 className='lg:text-xl text-lg mb-8 text-center mt-24 pr-12 pl-12'>
             {t('CtaWorksTitle')}
           </h1>
-          <motion.button 
-          whileHover={{scale:1.1}}
-          whileTap={{scale:0.9}}
-          className='bg-black border-r-2 border-none rounded text-white hover:text-gray w-62 font-semibold m-auto p-4' href='/works'> 
+        
+           <a  href='/works'>
+              <motion.button 
+              whileHover={{scale:1.1}}
+              whileTap={{scale:0.9}}
+              className='bg-black border-r-2 border-none rounded text-white hover:text-gray w-62 font-semibold m-auto p-4'
+              > 
               {t('CtaWorksTitleButton')}
-          </motion.button >
+              </motion.button >
+           </a>
+             
+        
           </section>
       </Reveal>
 
