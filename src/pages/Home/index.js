@@ -106,10 +106,10 @@ export default function Home() {
               </p></Reveal>
 
             
-            <Reveal><p className='items-center text-center align-middle text-lg font-serif font-medium  leading-9		p-10 pt-0'>
+            {/* <Reveal><p className='items-center text-center align-middle text-lg font-serif font-medium  leading-9		p-10 pt-0'>
           {t('HomeAboutMeSecondParagraph')} 
            
-            </p> </Reveal>
+            </p> </Reveal> */}
               <div className='text-8xl items-end text-right font-serif xl:-mr-20 hidden xl:block'>
                 &quot;
               </div>
