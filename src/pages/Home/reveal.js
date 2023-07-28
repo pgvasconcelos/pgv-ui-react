@@ -28,7 +28,7 @@ return(
             variants={variants}
             initial="hidden"
             animate={mainControls}
-            transition = {{duration:1, type: "spring", damping: 30, stiffness: 200}}  
+            transition = {{duration:1, type: "spring", damping: 90, stiffness: 220}}  
         >
                {props.children}
                 {/* <motion.div

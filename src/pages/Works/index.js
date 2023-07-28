@@ -1,11 +1,11 @@
 import WorkList from './worklist';
-import DropDown from './dropdown';
+// import DropDown from './dropdown';
 import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
 
 function Works(){
 
-    const {t, i18n } = useTranslation() 
+    const {i18n } = useTranslation() 
   
   
     useEffect(() =>{
@@ -24,7 +24,7 @@ return(
 
         </h1> */}
 
-        <section className="p-12 flex justify-between flex-col text-center ">
+        <section className="p-4 lg:p-12 flex justify-between flex-col text-center ">
             {/* <div className="text-xl font-semibold ">
                      {t('WorksTitle')}
             </div> */}

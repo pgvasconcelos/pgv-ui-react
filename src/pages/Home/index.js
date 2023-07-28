@@ -1,10 +1,10 @@
 import { useTranslation } from 'react-i18next';
 import { useEffect} from 'react';
-import ReactMarkdown from "react-markdown";
+// import ReactMarkdown from "react-markdown";
 
-import { motion } from "framer-motion"
+// import { motion } from "framer-motion"
 import Reveal  from "./reveal"
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
  import Works from '../Works';
 
