@@ -45,7 +45,7 @@ export default function Home() {
         <div className=' prose max-w-5xl max-h-fit text-center  pt-24 '>
 
 
-              <h1 className='text-6xl p-4 lg:p-0 lg:text-8xl text-bold h-auto'>  <Reveal>{t('HomeH1')}</Reveal></h1>
+              <h1 className='text-6xl p-4 lg:p-2 lg:text-8xl text-bold h-auto'>  <Reveal>{t('HomeH1')}</Reveal></h1>
 
 
               <h4 className='text-xl mt-24 mb-24 font-semibold pr-8 pl-8'>

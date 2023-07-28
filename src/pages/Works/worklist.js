@@ -63,7 +63,7 @@ function WorkList(props){
                           <motion.button
               whileHover={{scale:1.05}}
               whileTap={{scale:0.9}}>
-                    <a className=" p-6 border-spacing-3 rounded-3xl block max-w-lg bg-white shadow-xl 	max-h-max	" href={`works/${work.id}`} id={work.id} key={work.id}>
+                    <a className=" p-6 border-spacing-3 rounded-3xl block max-w-lg bg-white shadow-xl" href={`works/${work.id}`} id={work.id} key={work.id}>
 
                     { work.attributes.password_requeried ?  
                         <div className='pointer-events-none relative lg:-right-96 lg:-top- z-10 flex items-center justify-center rounded-full bg-darkgray bg-opacity-30 p-1 text-black w-8 '>
