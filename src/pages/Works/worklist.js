@@ -61,39 +61,39 @@ function WorkList(props){
                 return(
                     <Reveal>
                           <motion.button
-              whileHover={{scale:1.05}}
-              whileTap={{scale:0.9}}>
-                    <a className=" p-6 border-spacing-3 rounded-3xl block max-w-lg bg-white shadow-xl" href={`works/${work.id}`} id={work.id} key={work.id}>
+                            whileHover={{scale:1.05}}
+                            whileTap={{scale:0.9}}>
+                                <a className=" p-6 border-spacing-3 rounded-3xl block max-w-lg bg-white shadow-xl" href={`works/${work.id}`} key={work.id}>
 
-                    { work.attributes.password_requeried ?  
-                        <div className='pointer-events-none relative lg:-right-96 lg:-top- z-10 flex items-center justify-center rounded-full bg-darkgray bg-opacity-30 p-1 text-black w-8 '>
-                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" className="h-6 w-6"><path d="M5.75 11.75a1 1 0 011-1h10.5a1 1 0 011 1v5.5a2 2 0 01-2 2h-8.5a2 2 0 01-2-2v-5.5zM7.75 10.5v-.157c0-1.562-.094-3.302.996-4.42C9.368 5.288 10.374 4.75 12 4.75c1.626 0 2.632.537 3.254 1.174 1.09 1.117.996 2.857.996 4.419v.157" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path></svg> 
+                                { work.attributes.password_requeried ?  
+                                    <div className='pointer-events-none relative lg:-right-96 lg:-top- z-10 flex items-center justify-center rounded-full bg-darkgray bg-opacity-30 p-1 text-black w-8 '>
+                                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" className="h-6 w-6"><path d="M5.75 11.75a1 1 0 011-1h10.5a1 1 0 011 1v5.5a2 2 0 01-2 2h-8.5a2 2 0 01-2-2v-5.5zM7.75 10.5v-.157c0-1.562-.094-3.302.996-4.42C9.368 5.288 10.374 4.75 12 4.75c1.626 0 2.632.537 3.254 1.174 1.09 1.117.996 2.857.996 4.419v.157" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path></svg> 
 
-                        </div> : ''
-                        }  
-                        
-                            <img className='rounded-xl'
-                                src={work.attributes.image.data.attributes.url}
-                                width={500}
-                                alt=""
-                            />
-                        
-                        <h1 className="text-xl pt-8 font-bold pb-4 text-left">{work.attributes.title}</h1>
-                        
-                        <p className='pt-4 pb-4 text-darkgray text-left'>{work.attributes.description}</p>
+                                    </div> : ''
+                                    }  
+                                    
+                                        <img className='rounded-xl'
+                                            src={work.attributes.image.data.attributes.url}
+                                            width={500}
+                                            alt=""
+                                        />
+                                    
+                                    <h1 className="text-xl pt-8 font-bold pb-4 text-left">{work.attributes.title}</h1>
+                                    
+                                    <p className='pt-4 pb-4 text-darkgray text-left'>{work.attributes.description}</p>
 
-                        <div className='flex justify-between pt-8'>
-                            
-                            <h3 className=" text-md  font-bold "> {new Date(work.attributes.created).getFullYear()}</h3>
-                            
-                            <div className=' order-last whitespace-nowrap rounded-md text-darkgray px-2 py-0.5 text-xs font-semibold leading-6 bg-light-gray block w-fit align-end shadow '>
-                            {work.attributes.type}
-                            </div>
-                            
-                        </div>
-                        
+                                    <div className='flex justify-between pt-8'>
+                                        
+                                        <h3 className=" text-md  font-bold "> {new Date(work.attributes.created).getFullYear()}</h3>
+                                        
+                                        <div className=' order-last whitespace-nowrap rounded-md text-darkgray px-2 py-0.5 text-xs font-semibold leading-6 bg-light-gray block w-fit align-end shadow '>
+                                        {work.attributes.type}
+                                        </div>
+                                        
+                                    </div>
+                                    
 
-                    </a>
+                                </a>
                     </motion.button> 
                     </Reveal>
                 )})
