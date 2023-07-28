@@ -35,15 +35,15 @@ return(
                     pgv
                 </Link>
                 </li> 
-                <li 
+                {/* <li 
                 className="px-4 hover:text-green">
                     <Link to='/#services' >
                     {t('MenuServices')}
                     </Link>
-                </li>
+                </li> */}
                 <li 
                 className="px-4 hover:text-green">
-                    <Link to='/works?selected=all' >
+                    <Link to='#works' >
                       {t('MenuWorks')}
                     </Link>
                 </li>

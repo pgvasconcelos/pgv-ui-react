@@ -18,20 +18,22 @@ function Works(){
 
 return(
     <main className="flex container items-center flex-col m-auto min-h-screen">
-        <h1 className='text-4xl text-center pb-4 pt-12 font-light'>
-               {t('WorksPageTitle')}
-        </h1>
+        {/* <h1 className='text-4xl font-bold text-center pb-4 pt-12 '>
+                     {t('WorksPageTitle')}:
+                 
+
+        </h1> */}
 
         <section className="p-12 flex justify-between flex-col text-center ">
-            <div className="text-xl font-semibold ">
+            {/* <div className="text-xl font-semibold ">
                      {t('WorksTitle')}
-            </div>
-            <div className="text-sm flex mt-4 align-middle  text-center m-auto">
+            </div> */}
+            {/* <div className="text-sm flex mt-4 align-middle  text-center m-auto">
                 <div className='pt-2.5 mr-1' > 
                      {t('WorksFilterBy')}
                 </div>
                 <DropDown></DropDown>
-            </div> 
+            </div>  */}
          
             <WorkList lng={lng}></WorkList>
          

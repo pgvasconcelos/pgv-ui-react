@@ -2,6 +2,7 @@
  import api from '../../services/api'
  import { useSearchParams } from "react-router-dom";
  import Reveal  from "../Home/reveal"
+ import { motion } from "framer-motion"
 
 function WorkList(props){
     
@@ -52,14 +53,17 @@ function WorkList(props){
         
     }
     return(       
-   <div className='grid lg:grid-cols-2 mt-10 gap-4'>    
+   <div className='grid lg:grid-cols-2 mt-10 gap-9'>    
    {/* {props.lng}*/}
    {
 
                 works.map((work) => { 
                 return(
                     <Reveal>
-                    <a className=" p-6 border-spacing-3 border border-light-gray rounded-lg block max-w-lg   " href={`works/${work.id}`} id={work.id} key={work.id}>
+                          <motion.button
+              whileHover={{scale:1.05}}
+              whileTap={{scale:0.9}}>
+                    <a className=" p-6 border-spacing-3 rounded-3xl block max-w-lg bg-white shadow-xl 	max-h-max	" href={`works/${work.id}`} id={work.id} key={work.id}>
 
                     { work.attributes.password_requeried ?  
                         <div className='pointer-events-none relative lg:-right-96 lg:-top- z-10 flex items-center justify-center rounded-full bg-darkgray bg-opacity-30 p-1 text-black w-8 '>
@@ -68,10 +72,9 @@ function WorkList(props){
                         </div> : ''
                         }  
                         
-                            <img className=''
+                            <img className='rounded-xl'
                                 src={work.attributes.image.data.attributes.url}
                                 width={500}
-                                height={500}
                                 alt=""
                             />
                         
@@ -83,7 +86,7 @@ function WorkList(props){
                             
                             <h3 className=" text-md  font-bold "> {new Date(work.attributes.created).getFullYear()}</h3>
                             
-                            <div className=' order-last whitespace-nowrap rounded-md text-darkgray px-2 py-0.5 text-xs font-semibold leading-6 bg-light-gray block w-fit align-end border border-gray '>
+                            <div className=' order-last whitespace-nowrap rounded-md text-darkgray px-2 py-0.5 text-xs font-semibold leading-6 bg-light-gray block w-fit align-end shadow '>
                             {work.attributes.type}
                             </div>
                             
@@ -91,6 +94,7 @@ function WorkList(props){
                         
 
                     </a>
+                    </motion.button> 
                     </Reveal>
                 )})
             } 
