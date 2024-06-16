@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
+import Login from "./pages/Login";
 import Works from "./pages/Works/";
 import Work from "./pages/Work";
 import Erro from "./pages/Erro";
@@ -16,6 +17,7 @@ return(
     <Header/>
         <Routes>
           <Route path="/" element={ <Home/> } />
+          <Route path="/login" element={ <Login/> } />
           <Route path="/works" element={ <Works/> } />
           <Route path="/works/:id" element={ <Work/> } />
 

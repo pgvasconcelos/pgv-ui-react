@@ -16,7 +16,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  
   <React.StrictMode>
-     {console.log("%c Hello! If you're wondering if this is a template, the answer is NO. This is a small project that I created using React.js and Tailwind CSS. The backend is powered by Strapi.','background: #222; color: #bada55; font-size: 22px;")}
+     {console.log("%c Hello! This project was made using React.js + Tailwind CSS and Strapi as a CMS tool.','background: #222; color: #bada55; font-size: 22px;")}
     <App />
   </React.StrictMode>
 );

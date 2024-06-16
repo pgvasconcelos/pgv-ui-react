@@ -40,7 +40,7 @@ return(
 
         <span className='italic text-sm text-lightgray'> {new Date().getFullYear()} 
 
-        © All Rights Reserved -</span> 
+        Pedro Gouveia © All Rights Reserved -</span> 
 
         {/* <Link className='ml-2 mr-2 font-semibold text-sm' to="https://wa.me//351926022045?text=Tenho%20interesse%20nos%20seus%20serviços">hi@pgv.service</Link> */}
 
