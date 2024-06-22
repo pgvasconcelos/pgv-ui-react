@@ -97,24 +97,27 @@ export default function Home() {
               <div className='text-sm '>
               <Reveal> {t('HomePedroDescription')} </Reveal>
               </div>
+              <div className='text-sm '>
+              <Reveal> {t('HomeRoles')} </Reveal>
+              </div>
           </div>
           <div className='flex flex-col max-w-5xl justify-between  m-auto'>
-              <div className='text-8xl font-serif -mb-10 xl:-ml-20 text-left hidden xl:block'>
+              {/* <div className='text-8xl font-serif -mb-10 xl:-ml-20 text-left hidden xl:block'>
                 &quot;
               </div>
               <Reveal>
               <p className='items-center text-center align-middle text-lg font-serif font-medium  leading-9		p-10'>
             {t('HomeAboutMe')}
-              </p></Reveal>
+              </p></Reveal> */}
 
 
             {/* <Reveal><p className='items-center text-center align-middle text-lg font-serif font-medium  leading-9		p-10 pt-0'>
           {t('HomeAboutMeSecondParagraph')}
 
             </p> </Reveal> */}
-              <div className='text-8xl items-end text-right font-serif xl:-mr-20 hidden xl:block'>
+              {/* <div className='text-8xl items-end text-right font-serif xl:-mr-20 hidden xl:block'>
                 &quot;
-              </div>
+              </div> */}
           </div>
 
         </section>
