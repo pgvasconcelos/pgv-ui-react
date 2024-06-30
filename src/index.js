@@ -16,7 +16,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  
   <React.StrictMode>
-     {console.log("%c Hello! This project was made using React.js + Tailwind CSS and Strapi as a CMS tool.','background: #222; color: #bada55; font-size: 22px;")}
+     {console.log('%c Hello this it not a template! This project was made from scratch by me using React.js + Tailwind CSS and Strapi as a CMS tool.', 'background: #222; color: #bada55; font-size: 22px;')}
     <App />
   </React.StrictMode>
 );
