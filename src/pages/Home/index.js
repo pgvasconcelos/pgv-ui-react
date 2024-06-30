@@ -55,7 +55,7 @@ export default function Home() {
 
           <Reveal>
            <img className='m-auto mt-24 -mb-1'
-              src="https://res.cloudinary.com/dxbzhze4p/image/upload/v1688987610/profile2_5eca5a98b5.png"
+              src="https://res.cloudinary.com/dxbzhze4p/image/upload/v1719752925/pgv_avrvw9.png"
               width={500}
               height={500}
               alt="Pedro Gouveia"
