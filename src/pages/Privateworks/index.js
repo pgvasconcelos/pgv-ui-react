@@ -37,7 +37,9 @@ return(
                 <DropDown></DropDown>
             </div>  */}
         
-         
+        <div className='text-center font-bold text-lg		'>
+            {t('PrivatePortfolio')}
+            </div>
             <PrivateWorkList lng={lng}></PrivateWorkList>
          
         </section>

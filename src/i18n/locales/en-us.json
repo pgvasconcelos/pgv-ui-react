@@ -25,8 +25,9 @@
         "WorksFilterBy": "Filter by type:",
         "PrivatePortfolio": "Other jobs that you need to have special permission to see",
         "PublicPortfolio": "Some jobs that I can show to everyone",
-        "invalidPassword":"Invalid password. Please get in touch with me to request access."
+        "invalidPassword":"Invalid password. Please get in touch with me to request access.",
+        "Password":"Password",
+        "SignIn":"Login"
 
-       
     }
 }

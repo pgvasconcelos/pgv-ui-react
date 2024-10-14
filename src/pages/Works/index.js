@@ -35,7 +35,7 @@ return(
                 <DropDown></DropDown>
             </div>  */}
         
-            <div className='font-bold flex m-auto mt-14'>
+            <div className='font-bold flex text-lg  m-auto mt-14'>
             {t('PublicPortfolio')}
             </div>
 

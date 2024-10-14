@@ -100,10 +100,11 @@ export default function Home() {
               <Reveal> {t('HomeRoles')} </Reveal>
               </div>
           </div>
-          <Reveal>    
+          <Reveal>
+          <div id='works' className='bg-light-green'> </div> 
+    
            <Login></Login>
-      
-      </Reveal> 
+          </Reveal> 
 
           <div className='flex flex-col max-w-5xl justify-between  m-auto'>
               {/* <div className='text-8xl font-serif -mb-10 xl:-ml-20 text-left hidden xl:block'>
@@ -247,7 +248,6 @@ export default function Home() {
 
           </section>
       </Reveal> */}
-      {/* <div id='works' className='bg-light-green'> </div> */}
      
       </main>
 

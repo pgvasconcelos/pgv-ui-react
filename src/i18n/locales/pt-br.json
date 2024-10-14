@@ -23,7 +23,9 @@
         "WorksFilterBy": "Filtrar por:",
         "PrivatePortfolio": "Outros trabalhos que é preciso ter permissão especial para aceder",
         "PublicPortfolio": "Alguns trabalhos que posso mostrar",
-        "invalidPassword":"Password inválido. Entre em contato comigo para ter acesso a mais conteúdos do portfólio."
+        "invalidPassword":"Password inválido. Entre em contato comigo para ter acesso a mais conteúdos do portfólio.",
+        "Password":"Senha",
+        "SignIn":"Login"
    
     }
 }

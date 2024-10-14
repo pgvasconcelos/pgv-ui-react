@@ -1,90 +1,96 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Cookies from 'js-cookie';
 import Works from '../Works';
 import Privateworks from '../Privateworks';
 import { useTranslation } from 'react-i18next';
 
-
 function App() {
-  const {t,  i18n } = useTranslation()
-
+  const { t, i18n } = useTranslation();
+  
   const [password, setPassword] = useState('');
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [error, setError] = useState('');
 
   useEffect(() => {
-    
-  
+    // Define o idioma do navegador
     let lng = navigator.language;
     i18n.changeLanguage(lng);
-    // Verifica se o cookie de sessão existe
-    const sessionCookie = Cookies.get('session');
-    if (sessionCookie) {
-      setIsAuthenticated(true);
+
+    // Verificar se a senha está armazenada no localStorage
+    const savedPassword = localStorage.getItem('password');
+    if (savedPassword) {
+      // Tentar autenticar automaticamente com a senha salva
+      authenticateWithPassword(savedPassword);
     }
   }, [i18n]);
 
-  const handleLogin = async (e) => {
-    e.preventDefault();
+  const authenticateWithPassword = async (savedPassword) => {
     try {
-      const response = await axios.post(
-        'http://localhost:3001/api/auth/login',
-        { password },
-        { withCredentials: true } // Isso garante que os cookies sejam enviados
-      );
-  
+      const response = await axios.post('http://localhost:3001/api/auth/login', { password: savedPassword }, { withCredentials: true });
+
       if (response.status === 200) {
+        // Se a autenticação for bem-sucedida, define o estado como autenticado
         setIsAuthenticated(true);
         setError('');
       }
     } catch (err) {
+      // Caso a autenticação falhe, remover a senha salva e pedir login novamente
+      localStorage.removeItem('password');
+      setIsAuthenticated(false);
+      setError(t('invalidPassword'));
+    }
+  };
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post('http://localhost:3001/api/auth/login', { password }, { withCredentials: true });
+
+      if (response.status === 200) {
+        // Sucesso na autenticação
+        localStorage.setItem('password', password); // Salva a senha no localStorage
+        setIsAuthenticated(true);
+        setError('');
+      }
+    } catch (err) {
+      // Falha na autenticação
       setError(t('invalidPassword'));
     }
   };
 
   // Renderiza a página de login se não estiver autenticado
   if (!isAuthenticated) {
-    
     return (
-      <main  className="min-h-screen w-screen text-left">
+      <main className="min-h-screen w-screen text-left">
         <div>
-          <Works></Works> 
+          <Works /> 
         </div>
-    
-      <div className='min-h-screen w-screen text-left' >
-        <div className='text-center font-bold text-lg	' >
-              {t('PrivatePortfolio')}
-        </div>   
-      <form onSubmit={handleLogin}>
-       
-      <div className='m-auto mt-20 w-72 '>
-      <div className="password_2 block pt- relative">
-          <label>Password</label>
-          <div className="eye_div">
-                <input
-                   className="input block border border-gray-300 focus:border-pitch-black py-3 px-3 w-full focus:outline-none"
-                  type="password"
-                  onChange={(e) => setPassword(e.target.value)}
-                  value={password}
-                />
-          </div>
-          </div>
-          {error && <p className="text-red mt-2">{error}</p>}
+        <div className="min-h-screen w-screen text-left">
+          <div className="text-center font-bold text-lg">{t('PrivatePortfolio')}</div>
+          <form onSubmit={handleLogin}>
+            <div className="m-auto mt-20 w-72">
+              <div className="password_2 block pt- relative">
+                <label>Password</label>
+                <div className="eye_div">
+                  <input
+                    className="input block border border-gray-300 focus:border-pitch-black py-3 px-3 w-full focus:outline-none"
+                    type="password"
+                    onChange={(e) => setPassword(e.target.value)}
+                    value={password}
+                  />
+                </div>
+              </div>
+              {error && <p className="text-red mt-2">{error}</p>}
 
-          <button
-              className="mt-2 p-3 bg-black hover:bg-opacity-80 text-white w-72 text-sm"
-              type="submit"
-            >
-              Sign In
-            </button>
+              <button
+                className="mt-2 p-3 bg-black hover:bg-opacity-80 text-white w-72 text-sm"
+                type="submit"
+              >
+                Sign In
+              </button>
             </div>
-
-        </form>
-
-      </div>
-
-   
+          </form>
+        </div>
       </main>
     );
   }
@@ -92,14 +98,10 @@ function App() {
   // Se autenticado, renderiza o conteúdo protegido
   return (
     <div>
-           
-           <Works></Works> 
-           <div className='text-center font-bold text-lg		'>
-            {t('PrivatePortfolio')}
-            </div>
-           <Privateworks></Privateworks>, 
-
-      </div>
+      <Works /> 
+      
+      <Privateworks />
+    </div>
   );
 }
 
