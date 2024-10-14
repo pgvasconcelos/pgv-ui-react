@@ -1,4 +1,5 @@
 import WorkList from './worklist';
+import PrivateWorkList from './privateworklist';
 
 // import DropDown from './dropdown';
 import { useTranslation } from 'react-i18next';
@@ -6,8 +7,9 @@ import { useEffect } from 'react';
 
 function Works(){
 
+
     const {t, i18n } = useTranslation() 
-  
+
     useEffect(() =>{
       let lng = navigator.language;
       i18n.changeLanguage(lng);
@@ -35,13 +37,8 @@ return(
                 <DropDown></DropDown>
             </div>  */}
         
-            <div className='font-bold flex m-auto mt-14'>
-            {t('PublicPortfolio')}
-            </div>
-
-            <WorkList lng={lng}></WorkList>
-
-            
+         
+            <PrivateWorkList lng={lng}></PrivateWorkList>
          
         </section>
     </main>

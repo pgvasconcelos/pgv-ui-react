@@ -26,11 +26,11 @@ function WorkList(props){
       
         async function getWorks(type){
             if( type == null || type === "all" ){
-                const res = await api.get(`/works?filters[password_requeried][$eq]=false&populate=*&locale=${lang}`) 
+                const res = await api.get(`/works?filters[password_requeried][$eq]=true&populate=*&locale=${lang}`) 
     
                 setWorks(res.data.data)
             } else{            
-            const res = await api.get(`/works?filters[password_requeried][$eq]=false&[type][$eq]=${type}&populate=*&locale=${lang}`) 
+            const res = await api.get(`/works?filters[password_requeried][$eq]=true&[type][$eq]=${type}&populate=*&locale=${lang}`) 
 
             setWorks(res.data.data)
 
@@ -55,6 +55,7 @@ function WorkList(props){
     return(       
    <div className='grid lg:grid-cols-2 mt-10 gap-9'>    
    {/* {props.lng}*/}
+   
    {
 
                 works.map((work) => { 

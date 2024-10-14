@@ -3,7 +3,7 @@
         "MenuServices": "Services",
         "MenuWorks": "Works",
         "HomeH1": "Hello!👋 I'm Pedro!",
-        "HomeSubtitle" : "On this site, you will find some of the work I have done in digital product development (that I can share) and some of my entrepreneurial adventures. If you are looking for consultancy, have a good project and need help, or even want a few minutes of mentoring, feel free to get in touch!🫡",
+        "HomeSubtitle" : "On this site, you will find some of the work I have done in digital product development and some of my entrepreneurial adventures. If you are looking for consultancy, have a good project and need help, or even want a few minutes of mentoring, feel free to get in touch!🫡",
         "HomePedroName": "Pedro Gouveia de Vasconcelos",
         "HomePedroDescription": "Bachelor of Design (2013) - Federal University of Pernambuco | Based in Portugal",
         "HomeRoles": "Roles already played: Graphic Designer | UX | UI | PO | PM | Developer (Full stack) | CXO | CEO.",
@@ -22,9 +22,11 @@
         "CtaWorksTitleButton": "See some of my works",
         "WorksPageTitle": "Previous works",
         "WorksTitle": "Here are some of the projects I have worked:",
-        "WorksFilterBy": "Filter by type:"
+        "WorksFilterBy": "Filter by type:",
+        "PrivatePortfolio": "Other jobs that you need to have special permission to see",
+        "PublicPortfolio": "Some jobs that I can show to everyone",
+        "invalidPassword":"Invalid password. Please get in touch with me to request access."
 
-       
        
     }
 }

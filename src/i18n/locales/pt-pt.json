@@ -20,6 +20,10 @@
         "CtaWorksTitleButton": "Conheça alguns trabalhos",
         "WorksPageTitle": " Trabalhos anteriores",
         "WorksTitle": " Aqui estão alguns dos projetos que trabalhei:",
-        "WorksFilterBy": "Filtrar por:"   
+        "WorksFilterBy": "Filtrar por:",
+        "PrivatePortfolio": "Outros trabalhos que é preciso ter permissão especial para aceder",
+        "PublicPortfolio": "Alguns trabalhos que posso mostrar",
+        "invalidPassword":"Password inválido. Entre em contato comigo para ter acesso a mais conteúdos do portfólio."
+      
     }
 }

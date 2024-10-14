@@ -6,8 +6,7 @@ import { useEffect} from 'react';
 import Reveal  from "./reveal"
 // import { Link } from 'react-router-dom';
 
- import Works from '../Works';
-
+ import Login from '../Login';
 
 
 export default function Home() {
@@ -101,6 +100,11 @@ export default function Home() {
               <Reveal> {t('HomeRoles')} </Reveal>
               </div>
           </div>
+          <Reveal>    
+           <Login></Login>
+      
+      </Reveal> 
+
           <div className='flex flex-col max-w-5xl justify-between  m-auto'>
               {/* <div className='text-8xl font-serif -mb-10 xl:-ml-20 text-left hidden xl:block'>
                 &quot;
@@ -243,9 +247,8 @@ export default function Home() {
 
           </section>
       </Reveal> */}
-      <div id='works' className='bg-light-green'>
-      <Works></Works>
-      </div>
+      {/* <div id='works' className='bg-light-green'> </div> */}
+     
       </main>
 
     </div>
