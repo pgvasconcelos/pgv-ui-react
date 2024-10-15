@@ -26,7 +26,7 @@ function App() {
 
   const authenticateWithPassword = async (savedPassword) => {
     try {
-      const response = await axios.post('http://localhost:3001/api/auth/login', { password: savedPassword }, { withCredentials: true });
+      const response = await axios.post('https://authentication.pgv.services/', { password: savedPassword }, { withCredentials: true });
 
       if (response.status === 200) {
         // Se a autenticação for bem-sucedida, define o estado como autenticado
@@ -44,7 +44,7 @@ function App() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3001/api/auth/login', { password }, { withCredentials: true });
+      const response = await axios.post('https://authentication.pgv.services/', { password }, { withCredentials: true });
 
       if (response.status === 200) {
         // Sucesso na autenticação
