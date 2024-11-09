@@ -57,7 +57,7 @@ function App() {
       setError(t('invalidPassword'));
     }
   };
-
+  
   // Renderiza a página de login se não estiver autenticado
   if (!isAuthenticated) {
     return (
